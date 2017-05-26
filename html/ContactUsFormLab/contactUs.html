@@ -5,49 +5,53 @@
     </head>
     <body>
         <form action="#" method="POST">
-            <div>
-                <label id="firstNameLabel" for="firstName">First Name: </label>
-                <input id="firstName" name="firstName" type="text" />
-            </div>
-            <br/>
-            <div>
-                <label id="lastNameLabel" for="lastName">Last Name: </label>
-                <input id="lastName" name="lastName" type="text" />
-            </div>
-            <br/>
-            <div>
-                <label id="emailLabel" for="email">Email: </label>
-                <input id="email" name="email" type="text" />
-            </div>
-            <br/>
-            <div>
-                <label id="licenseLabel" for="licenseType">Type of License: </label>
-                <input id="licenseType" name="licenseType" type="radio" value="business" checked/>Business
-                <input id="licenseType" name="licenseType" type="radio" value="personal" />Personal
-            </div>
-            <br/>
-            <div>
-                <label id="reasonLabel" for="reason">Reason: </label>
-                <select id="reason" name="reason">
-                    <option value="selectAReason">Select a Reason</option>
-                    <option value="softwareSupport">Software Support</option>
-                    <option value="hardwareSupport">Hardware Support</option>
-                    <option value="informationRequest">Information Request</option>
-                </select>
-            </div>
-            <br/>
-            <div>
-                <label id="additionalInformationLabel" for="additionalInformation">Additional Information: </label>
-                <textarea id="additionalInformation" name="additionalInformation"></textarea>
-            </div>
-            <br/>
-            <div>
-                <input id="termsOfService" name="termsOfService" type="checkbox" value="termsOfService" />I have read the terms of service.
-            </div>
-            <br/>
-            <div>
-                <input type="submit" id="sendButton" value="Send Request" />
-            </div>
+            <table>
+                <tr>
+                    <td align="right">First Name: </td>
+                    <td align="left"><input id="firstName" name="firstName" type="text" style="width: 225px;" /></td>
+                </tr>
+                <tr><td></td><td></td></tr>
+                <tr>
+                    <td align="right">Last Name: </td>
+                    <td align="left"><input id="lastName" name="lastName" type="text" style="width: 225px;" /></td>
+                </tr>
+                <tr><td></td><td></td></tr>
+                <tr>
+                    <td align="right">Email: </td>
+                    <td align="left"><input id="email" name="email" type="text" style="width: 225px;" /></td>
+                </tr>
+                <tr><td></td><td></td></tr>
+                <tr>
+                    <td align="right">Type of License: </td>
+                    <td align="left"><input id="licenseType" name="licenseType" type="radio" value="business" checked/>Business
+                        <input id="licenseType" name="licenseType" type="radio" value="personal" />Personal</td>
+                </tr>
+                <tr><td></td><td></td></tr>
+                <tr>
+                    <td align="right">Reason: </td>
+                    <td align="left"><select id="reason" name="reason" style="width: 225px;">
+                        <option value="selectAReason">Select a Reason</option>
+                        <option value="softwareSupport">Software Support</option>
+                        <option value="hardwareSupport">Hardware Support</option>
+                        <option value="informationRequest">Information Request</option>
+                        </select></td>
+                </tr>
+                <tr><td></td><td></td></tr>
+                <tr>
+                    <td align="right">Additional Information: </td>
+                    <td align="left"><textarea id="additionalInformation" name="additionalInformation" style="width: 225px;"></textarea></td>
+                </tr>
+                <tr><td></td><td></td></tr>
+                <tr>
+                    <td></td>
+                    <td align="right"><input id="termsOfService" name="termsOfService" type="checkbox" value="termsOfService" />I have read the terms of service.</td>
+                </tr>
+                <tr><td></td><td></td></tr>
+                <tr>
+                    <td></td>
+                    <td align="right"><input type="submit" id="sendButton" value="Send Request" /></td>
+                </tr>
+            </table>
         </form>
     </body>
 </html>
