@@ -1,0 +1,66 @@
+<!--<!DOCTYPE html>
+the DOCTYPE was commented out because reportedly table align="center" is obsolete in HTML5-->
+<html>
+    <head>
+        <title>Contact Us - All-American Eatery</title>
+    </head>
+    <body>
+        <h1 style="text-align:center;">All-American Eatery</h1>
+        <hr/>
+        <a href="index.html">Home</a> &nbsp;
+        <a href="menu.html">Menu</a> &nbsp;
+        <a href="contactUs.html">Contact Us</a>
+        <hr/>
+        <br/>
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td align="right">Name: </td>
+                    <td align="left"><input id="name" name="name" type="text" style="width: 190px" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Email: </td>
+                    <td align="left"><input id="email" name="email" type="text" style="width: 190px" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Phone: </td>
+                    <td align="left"><input id="phone" name="phone" type="text" style="width: 190px" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Reason for Inquiry: </td>
+                    <td align="left"><select id="reason" name="reason" style="width: 190px">
+                        <option value="catering">Catering</option>
+                        <option value="privateParty">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Additional Information: </td>
+                    <td align="left"><textarea rows="6" id="additionalInformation" name="additionalInformation" style="width: 190px"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right">Have you been to the restaurant? </td>
+                    <td align="left"><input id="beenHereBefore" name="beenHereBefore" type="radio" value="no" checked />No
+                        <input id="beenHereBefore" name="beenHereBefore" type="radio" value="yes" />Yes</td>
+                </tr>
+                <tr>
+                    <td align="right">Best days to contact you: </td>
+                    <td align="left"><input id="monday" name="monday" type="checkbox" value="M" />M
+                        <input id="tuesday" name="tuesday" type="checkbox" value="T" />T
+                        <input id="wednesday" name="wednesday" type="checkbox" value="W" />W
+                        <input id="thursday" name="thursday" type="checkbox" value="Th" />Th
+                        <input id="friday" name="friday" type="checkbox" value="F" />F</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="right"><input type="submit" id="sendRequest" value="Send Request" /></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+    <footer style="text-align:center;">
+        254 Eat Street, Minneapolis, MN 55408 <br/>
+        612-867-5309
+    </footer>
+</html>
