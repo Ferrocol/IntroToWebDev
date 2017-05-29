@@ -2,10 +2,22 @@
 the DOCTYPE was commented out because reportedly table align="center" is obsolete in HTML5-->
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
         <title>Contact Us - All-American Eatery</title>
+        <style>
+            #label {
+                text-align: right;
+            }
+            #form {
+                text-align: left;
+            }
+            td {
+                padding-bottom: 0.5em;
+            }
+        </style>
     </head>
     <body>
-        <h1 style="text-align:center;">All-American Eatery</h1>
+        <h1>All-American Eatery</h1>
         <hr/>
         <a href="index.html">Home</a> &nbsp;
         <a href="menu.html">Menu</a> &nbsp;
@@ -15,20 +27,20 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
         <form action="#" method="POST">
             <table>
                 <tr>
-                    <td align="right">Name: </td>
-                    <td align="left"><input id="name" name="name" type="text" style="width: 190px" /></td>
+                    <td id="label">Name: </td>
+                    <td id="form"><input id="name" name="name" type="text" style="width: 190px" /></td>
                 </tr>
                 <tr>
-                    <td align="right">Email: </td>
-                    <td align="left"><input id="email" name="email" type="text" style="width: 190px" /></td>
+                    <td id="label">Email: </td>
+                    <td id="form"><input id="email" name="email" type="text" style="width: 190px" /></td>
                 </tr>
                 <tr>
-                    <td align="right">Phone: </td>
-                    <td align="left"><input id="phone" name="phone" type="text" style="width: 190px" /></td>
+                    <td id="label">Phone: </td>
+                    <td id="form"><input id="phone" name="phone" type="text" style="width: 190px" /></td>
                 </tr>
                 <tr>
-                    <td align="right">Reason for Inquiry: </td>
-                    <td align="left"><select id="reason" name="reason" style="width: 190px">
+                    <td id="label">Reason for Inquiry: </td>
+                    <td id="form"><select id="reason" name="reason" style="width: 190px">
                         <option value="catering">Catering</option>
                         <option value="privateParty">Private Party</option>
                         <option value="feedback">Feedback</option>
@@ -36,17 +48,17 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
                     </select></td>
                 </tr>
                 <tr>
-                    <td align="right" valign="top">Additional Information: </td>
-                    <td align="left"><textarea rows="6" id="additionalInformation" name="additionalInformation" style="width: 190px"></textarea></td>
+                    <td id="label" valign="top">Additional Information: </td>
+                    <td id="form"><textarea rows="6" id="additionalInformation" name="additionalInformation" style="width: 190px"></textarea></td>
                 </tr>
                 <tr>
-                    <td align="right">Have you been to the restaurant? </td>
-                    <td align="left"><input id="beenHereBefore" name="beenHereBefore" type="radio" value="no" checked />No
+                    <td id="label">Have you been to the restaurant? </td>
+                    <td id="form"><input id="beenHereBefore" name="beenHereBefore" type="radio" value="no" checked />No
                         <input id="beenHereBefore" name="beenHereBefore" type="radio" value="yes" />Yes</td>
                 </tr>
                 <tr>
-                    <td align="right">Best days to contact you: </td>
-                    <td align="left"><input id="monday" name="monday" type="checkbox" value="M" />M
+                    <td id="label">Best days to contact you: </td>
+                    <td id="form"><input id="monday" name="monday" type="checkbox" value="M" />M
                         <input id="tuesday" name="tuesday" type="checkbox" value="T" />T
                         <input id="wednesday" name="wednesday" type="checkbox" value="W" />W
                         <input id="thursday" name="thursday" type="checkbox" value="Th" />Th
@@ -54,12 +66,12 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
                 </tr>
                 <tr>
                     <td></td>
-                    <td align="right"><input type="submit" id="sendRequest" value="Send Request" /></td>
+                    <td id="label"><input type="submit" id="sendRequest" value="Send Request" /></td>
                 </tr>
             </table>
         </form>
     </body>
-    <footer style="text-align:center;">
+    <footer>
         254 Eat Street, Minneapolis, MN 55408 <br/>
         612-867-5309
     </footer>
