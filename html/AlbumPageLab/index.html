@@ -2,16 +2,28 @@
 <html>
     <head>
         <title>Rabbits on the Run</title>
+        <link rel="stylesheet" type="text/css" href="albumStyles.css">
+        <style>
+            li {
+                font-style: italic;
+            }
+            #primaryArtist {
+                text-decoration: underline;
+            }
+            .tracklist {
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <p style="text-align:center;"><img src="images/albumArt.jpg" alt="Album Cover"/></p>
-        <h1 style="text-align:center;">Album: Rabbits on the Run</h1>
-        <h2 style="text-align:center;">Artist: <a href="http://www.vanessacarlton.com">Vanessa Carlton</a></h2>
-        <h3 style="text-align:center;">Release Date: July 26, 2011</h3>
+        <h1>Album: Rabbits on the Run</h1>
+        <h2>Artist: <a href="http://www.vanessacarlton.com">Vanessa Carlton</a></h2>
+        <h3>Release Date: July 26, 2011</h3>
         <hr/>
-        <h2 style="text-align:center;">Band Members and Producers</h2>
+        <h2>Band Members and Producers</h2>
         <ul>
-            <li>Vanessa Carlton - vocals, harmonium, piano</li>
+            <li id="primaryArtist">Vanessa Carlton - vocals, harmonium, piano</li>
             <li>Richard Ashton - french horn</li>
             <li>Ian Burdge - cello</li>
             <li>Capital Children's Choir - choir, chorus</li>
@@ -27,10 +39,10 @@
             <li>Warren Zielinski - violin</li>
             <li>Steve Osborne - producer</li>
         </ul>
-        <h2 style="text-align:center;">Tracks</h2>
+        <h2>Tracks</h2>
         <table border="1" width="100%">
             <thead>
-                <tr bgcolor="grey">
+                <tr bgcolor="black" class="tracklist">
                     <th>Track #</th>
                     <th>Track Title</th>
                     <th>Track Length</th>
