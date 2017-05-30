@@ -5,3 +5,27 @@ h1, h2, h3 {
     color: navy;
     text-align: center;
 }
+li {
+    font-style: italic;
+}
+#primaryArtist {
+    text-decoration: underline;
+}
+.tracklist {
+    color: white;
+}
+.albumArt {
+    background-image: url("images/albumArt.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center center;
+    width: 100%;
+    height: 400px;
+}
+.decorativeFont {
+    font-family: sans-serif;
+}
+td {
+    font-style: italic;
+    background-color: lightgray;
+}
