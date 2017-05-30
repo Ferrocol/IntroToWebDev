@@ -7,3 +7,12 @@ footer {
     text-align: center;
     color: darkblue;
 }
+.menu {
+    background-color: darkblue;
+}
+.beverageMenu {
+    background-color: darkblue;
+}
+.beverageMenu td {
+    font-style: normal;
+}

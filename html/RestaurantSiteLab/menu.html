@@ -15,8 +15,14 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
                 font-size: larger;
                 color: azure;
             }
-            .menu {
-                background-color: darkblue;
+            a:visited {
+                color: darkred;
+            }
+            a:hover {
+                font-weight: bold;
+            }
+            a:active {
+                text-decoration: none;
             }
         </style>
     </head>
@@ -93,6 +99,31 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
                         french fries<BR>
                         $7.95
                     </td>
+            </tbody>
+        </table>
+        <table align="center" width="800" class="beverageMenu">
+            <thead>
+                <tr>
+                    <th colspan="2">Beverages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Root Beer</td> 
+                    <td>$3.00</td>
+                </tr>
+                <tr>
+                    <td>Bottled Water</td>
+                    <td>$1.25</td>
+                </tr>
+                <tr>
+                    <td>Lemonade</td>
+                    <td>$1.00</td>
+                </tr>
+                <tr>
+                    <td>Iced Tea</td>
+                    <td>$1.25</td>
+                </tr>
             </tbody>
         </table>
     <hr/>
