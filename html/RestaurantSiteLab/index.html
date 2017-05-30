@@ -4,6 +4,11 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
     <head>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
         <title>All-American Eatery</title>
+        <style>
+            #content {
+                background-color: orange;
+            }
+        </style>
     </head>
     <body>
         <h1>All-American Eatery</h1>
@@ -12,17 +17,19 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
         <a href="menu.html">Menu</a> &nbsp;
         <a href="contactUs.html">Contact Us</a>
         <hr/>
-        <p style="text-align:center;"><img src="images/poutine.jpg" style="width: 400px" />
-        <div>
-            <table align="center" border="1" width="400">
-                <tr>
-                    <td>
-                        Women belong in the kitchen. Men belong in the kitchen. Everyone belongs in the kitchen. The kitchen has food.
-                        I could add a longer description, but I was never much of a writer. You like to eat food, don't you?
-                        Of course you do! Well guess what? We make food you can eat!
-                    </td>
-                </tr>
-            </table>
+        <div id="content">
+            <p style="text-align:center;"><img src="images/poutine.jpg" style="width: 400px" />
+            <div>
+                <table align="center" border="1" width="400">
+                    <tr>
+                        <td>
+                            Women belong in the kitchen. Men belong in the kitchen. Everyone belongs in the kitchen. The kitchen has food.
+                            I could add a longer description, but I was never much of a writer. You like to eat food, don't you?
+                            Of course you do! Well guess what? We make food you can eat!
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <hr/>
     </body>

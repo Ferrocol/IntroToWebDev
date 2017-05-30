@@ -14,6 +14,9 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
             td {
                 padding-bottom: 0.5em;
             }
+            .required {
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
@@ -27,19 +30,19 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
         <form action="#" method="POST">
             <table>
                 <tr>
-                    <td id="label">Name: </td>
+                    <td id="label" class="required">Name: </td>
                     <td id="form"><input id="name" name="name" type="text" style="width: 190px" /></td>
                 </tr>
                 <tr>
-                    <td id="label">Email: </td>
+                    <td id="label" class="required">Email: </td>
                     <td id="form"><input id="email" name="email" type="text" style="width: 190px" /></td>
                 </tr>
                 <tr>
-                    <td id="label">Phone: </td>
+                    <td id="label" class="required">Phone: </td>
                     <td id="form"><input id="phone" name="phone" type="text" style="width: 190px" /></td>
                 </tr>
                 <tr>
-                    <td id="label">Reason for Inquiry: </td>
+                    <td id="label" class="required">Reason for Inquiry: </td>
                     <td id="form"><select id="reason" name="reason" style="width: 190px">
                         <option value="catering">Catering</option>
                         <option value="privateParty">Private Party</option>

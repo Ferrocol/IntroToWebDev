@@ -1,9 +1,7 @@
-body{
-    background-color: palegoldenrod;
-}
 h1 {
     text-align: center;
     color: red;
+    font-family: "Arial Black";
 }
 footer {
     text-align: center;
