@@ -4,6 +4,8 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
     <head>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
         <link rel="stylesheet" type="text/css" href="A:Utilities/Development Tools/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+        <script src="A:Utilities/Development Tools/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
         <title>All-American Eatery</title>
         <style>
             #content {
@@ -22,12 +24,47 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
                 text-align: center;
             }
         </style>
+        <noscript>Whoops! Your browser does not support Javascript. Please enable it for the optimal viewing experience.</noscript>
     </head>
     <body>
         <h1>All-American Eatery</h1>
-            <div class="page-header">
+<!--            <div class="page-header">
                 <h1>Grand Opening! <small>July 4th, 2017</small></h1>
+            </div>-->
+        <div id="announcement-carousel" class="carousel slide" data-ride="carousel">
+            <div class="row">
+                <div class="col-xs-offset-3 col-xs-6">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="carousel-content">
+                                <div>
+                                    <h4>We're opening a new location!</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content">
+                                <div>
+                                    <h4>We're rolling out our seasonal menu, with special options for this season.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content">
+                                <h4>The Drink of the Month is SG Special Brew.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a class="left carousel-control" href="#announcement-carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#announcement-carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        <hr/>
         <ul class="nav nav-pills">
             <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -35,7 +72,7 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
         </ul>
         <hr/>
         <div id="content">
-            <p style="text-align:center;"><img src="images/poutine.jpg" class="img-rounded img-responsive" width="400" style="margin:0 auto;" />
+            <p style="text-align:center;"><img src="images/poutine.jpg" alt="Poutine. The irony is not lost on us." class="img-rounded img-responsive" width="400" style="margin:0 auto;" />
             <div class="table-responsive">
                 <table align="center" width="400" class="table">
                     <tr>
