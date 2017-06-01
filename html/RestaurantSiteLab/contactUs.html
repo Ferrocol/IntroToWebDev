@@ -3,6 +3,7 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+        <link rel="stylesheet" type="text/css" href="A:Utilities/Development Tools/bootstrap-3.3.7-dist/css/bootstrap.css">
         <title>Contact Us - All-American Eatery</title>
         <style>
             #label {
@@ -31,57 +32,60 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
     <body>
         <h1>All-American Eatery</h1>
         <hr/>
-        <a href="index.html">Home</a> &nbsp;
-        <a href="menu.html">Menu</a> &nbsp;
-        <a href="contactUs.html">Contact Us</a>
+        <ul class="nav nav-pills">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="active"><a href="contactUs.html">Contact Us</a></li>
+        </ul>
         <hr/>
-        <br/>
-        <form action="#" method="POST">
-            <table>
-                <tr>
-                    <td id="label" class="required">Name: </td>
-                    <td id="form"><input id="name" name="name" type="text" style="width: 190px" /></td>
-                </tr>
-                <tr>
-                    <td id="label" class="required">Email: </td>
-                    <td id="form"><input id="email" name="email" type="text" style="width: 190px" /></td>
-                </tr>
-                <tr>
-                    <td id="label" class="required">Phone: </td>
-                    <td id="form"><input id="phone" name="phone" type="text" style="width: 190px" /></td>
-                </tr>
-                <tr>
-                    <td id="label" class="required">Reason for Inquiry: </td>
-                    <td id="form"><select id="reason" name="reason" style="width: 190px">
-                        <option value="catering">Catering</option>
-                        <option value="privateParty">Private Party</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="other">Other</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td id="label" valign="top">Additional Information: </td>
-                    <td id="form"><textarea rows="6" id="additionalInformation" name="additionalInformation" style="width: 190px"></textarea></td>
-                </tr>
-                <tr>
-                    <td id="label">Have you been to the restaurant? </td>
-                    <td id="form"><input id="beenHereBefore" name="beenHereBefore" type="radio" value="no" checked />No
-                        <input id="beenHereBefore" name="beenHereBefore" type="radio" value="yes" />Yes</td>
-                </tr>
-                <tr>
-                    <td id="label">Best days to contact you: </td>
-                    <td id="form"><input id="monday" name="monday" type="checkbox" value="M" />M
-                        <input id="tuesday" name="tuesday" type="checkbox" value="T" />T
-                        <input id="wednesday" name="wednesday" type="checkbox" value="W" />W
-                        <input id="thursday" name="thursday" type="checkbox" value="Th" />Th
-                        <input id="friday" name="friday" type="checkbox" value="F" />F</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td id="label"><input type="submit" id="sendRequest" value="Send Request" /></td>
-                </tr>
-            </table>
-        </form>
+        <div class="table-responsive"
+            <form action="#" method="POST">
+                <table class="table">
+                    <tr>
+                        <td id="label" class="required">Name: </td>
+                        <td id="form"><input id="name" name="name" type="text" style="width: 190px" /></td>
+                    </tr>
+                    <tr>
+                        <td id="label" class="required">Email: </td>
+                        <td id="form"><input id="email" name="email" type="text" style="width: 190px" /></td>
+                    </tr>
+                    <tr>
+                        <td id="label" class="required">Phone: </td>
+                        <td id="form"><input id="phone" name="phone" type="text" style="width: 190px" /></td>
+                    </tr>
+                    <tr>
+                        <td id="label" class="required">Reason for Inquiry: </td>
+                        <td id="form"><select id="reason" name="reason" style="width: 190px">
+                            <option value="catering">Catering</option>
+                            <option value="privateParty">Private Party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td id="label" valign="top">Additional Information: </td>
+                        <td id="form"><textarea rows="6" id="additionalInformation" name="additionalInformation" style="width: 190px"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td id="label">Have you been to the restaurant? </td>
+                        <td id="form"><input id="beenHereBefore" name="beenHereBefore" type="radio" value="no" checked />No
+                            <input id="beenHereBefore" name="beenHereBefore" type="radio" value="yes" />Yes</td>
+                    </tr>
+                    <tr>
+                        <td id="label">Best days to contact you: </td>
+                        <td id="form"><input id="monday" name="monday" type="checkbox" value="M" />M
+                            <input id="tuesday" name="tuesday" type="checkbox" value="T" />T
+                            <input id="wednesday" name="wednesday" type="checkbox" value="W" />W
+                            <input id="thursday" name="thursday" type="checkbox" value="Th" />Th
+                            <input id="friday" name="friday" type="checkbox" value="F" />F</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="label"><input type="submit" id="sendRequest" value="Send Request" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </body>
     <footer>
         254 Eat Street, Minneapolis, MN 55408 <br/>

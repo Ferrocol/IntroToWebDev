@@ -3,6 +3,7 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+        <link rel="stylesheet" type="text/css" href="A:Utilities/Development Tools/bootstrap-3.3.7-dist/css/bootstrap.css">
         <title>All-American Eatery</title>
         <style>
             #content {
@@ -17,26 +18,37 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
             a:active {
                 text-decoration: none;
             }
+            table td {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
         <h1>All-American Eatery</h1>
-        <hr/>
-        <a href="index.html">Home</a> &nbsp;
-        <a href="menu.html">Menu</a> &nbsp;
-        <a href="contactUs.html">Contact Us</a>
+            <div class="page-header">
+                <h1>Grand Opening! <small>July 4th, 2017</small></h1>
+            </div>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
         <hr/>
         <div id="content">
-            <p style="text-align:center;"><img src="images/poutine.jpg" style="width: 400px" />
-            <div>
-                <table align="center" width="400">
+            <p style="text-align:center;"><img src="images/poutine.jpg" class="img-rounded img-responsive" width="400" style="margin:0 auto;" />
+            <div class="table-responsive">
+                <table align="center" width="400" class="table">
                     <tr>
                         <td>
-                            Women belong in the kitchen. Men belong in the kitchen. Everyone belongs in the kitchen. The kitchen has food.
-                            I could add a longer description, but I was never much of a writer. You like to eat food, don't you?
-                            Of course you do! Well guess what? We make food you can eat!
+                            Women belong in the kitchen.<br/>
+                            Men belong in the kitchen.<br/>
+                            Everyone belongs in the kitchen.<br/>
+                            The kitchen has food.<br/>
+                            I could add a longer description, but I was never much of a writer.<br/>
+                            You like to eat food, don't you?<br/>
+                            Of course you do! Well guess what?<br/>
+                            We make food you can eat!
                         </td>
-                    </tr>
                 </table>
             </div>
         </div>

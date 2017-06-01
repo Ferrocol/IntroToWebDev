@@ -3,6 +3,7 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+        <link rel="stylesheet" type="text/css" href="A:Utilities/Development Tools/bootstrap-3.3.7-dist/css/bootstrap.css">
         <title>Menu - All-American Eatery</title>
         <style>
             td {
@@ -14,6 +15,7 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
             th {
                 font-size: larger;
                 color: azure;
+                text-align: center;
             }
             a:visited {
                 color: darkred;
@@ -29,103 +31,107 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
     <body>
         <h1>All-American Eatery</h1>
         <hr/>
-        <a href="index.html">Home</a> &nbsp;
-        <a href="menu.html">Menu</a> &nbsp;
-        <a href="contactUs.html">Contact Us</a>
+        <ul class="nav nav-pills">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li class="active"><a href="menu.html">Menu</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
         <hr/>
-        <table align="center" width="800" class="menu">
-            <thead>
-                <tr>
-                    <th>Burger and Fries</th>
-                    <th>Hot Dog and Chips</th>
-                    <th>Italian Sausage and Peppers</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        An American Classic!<BR>
-                        Your choice - with or without cheese<BR>
-                        Pickle, onion, tomato, and lettuce<BR>
-                        Served with our famous thick cut<BR>
-                        french fries<BR>
-                        $7.95
-                    </td>
-                    <td>
-                        A Summer Classic!<BR>
-                        Your choice - white or wheat bun<BR>
-                        Relish, mustard, and ketchup<BR>
-                        Served with our house-made chips<BR>
-                        $7.95
-                    </td>
-                    <td>
-                        An All-Time Favorite!!<BR>
-                        Your choice - mild or spicy<BR>
-                        Cole Slaw<BR>
-                        Served with garlic mashers<BR>
-                        $10.95
-                    </td>
-                </tr>
-            </tbody>
-            <thead>
-                <tr>
-                    <th>Tenderloin Sandwich and Chips</th>
-                    <th>House Salad</th>
-                    <th>Brisket Sandwich and Fries</th>
-                </tr>
-            </thead>
-            <tbody>
-                    <td>
-                        Really Hits the Spot!<BR>
-                        Plain or Sesame Seed Bun<BR>
-                        Pickle, onion, tomato, and lettuce<BR>
-                        Served with our house-made chips<BR>
-                        $8.95
-                    </td>
-                    <td>
-                        On the Lighter Side<BR>
-                        Your choice - with or without cheese<BR>
-                        Iceberg lettuce, tomatoes, peppers<BR>
-                        Thousand Island or Ranch Dressing<BR>
-                        Served with a dinner roll<BR>
-                        $6.95
-                    </td>
-                    <td>
-                        A Taste of Texas!<BR>
-                        Smoked Brisket on thick-cut Texas<BR>
-                        Toast<BR>
-                        Cole Slaw<BR>
-                        Served with our famous thick-cut<BR>
-                        french fries<BR>
-                        $7.95
-                    </td>
-            </tbody>
-        </table>
-        <table align="center" width="800" class="beverageMenu">
-            <thead>
-                <tr>
-                    <th colspan="2">Beverages</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Root Beer</td> 
-                    <td>$3.00</td>
-                </tr>
-                <tr>
-                    <td>Bottled Water</td>
-                    <td>$1.25</td>
-                </tr>
-                <tr>
-                    <td>Lemonade</td>
-                    <td>$1.00</td>
-                </tr>
-                <tr>
-                    <td>Iced Tea</td>
-                    <td>$1.25</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table align="center" width="800" class="menu table">
+                <thead>
+                    <tr>
+                        <th>Burger and Fries</th>
+                        <th>Hot Dog and Chips</th>
+                        <th>Italian Sausage and Peppers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            An American Classic!<BR>
+                            Your choice - with or without cheese<BR>
+                            Pickle, onion, tomato, and lettuce<BR>
+                            Served with our famous thick cut<BR>
+                            french fries<BR>
+                            $7.95
+                        </td>
+                        <td>
+                            A Summer Classic!<BR>
+                            Your choice - white or wheat bun<BR>
+                            Relish, mustard, and ketchup<BR>
+                            Served with our house-made chips<BR>
+                            $7.95
+                        </td>
+                        <td>
+                            An All-Time Favorite!!<BR>
+                            Your choice - mild or spicy<BR>
+                            Cole Slaw<BR>
+                            Served with garlic mashers<BR>
+                            $10.95
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>Tenderloin Sandwich and Chips</th>
+                        <th>House Salad</th>
+                        <th>Brisket Sandwich and Fries</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <td>
+                            Really Hits the Spot!<BR>
+                            Plain or Sesame Seed Bun<BR>
+                            Pickle, onion, tomato, and lettuce<BR>
+                            Served with our house-made chips<BR>
+                            $8.95
+                        </td>
+                        <td>
+                            On the Lighter Side<BR>
+                            Your choice - with or without cheese<BR>
+                            Iceberg lettuce, tomatoes, peppers<BR>
+                            Thousand Island or Ranch Dressing<BR>
+                            Served with a dinner roll<BR>
+                            $6.95
+                        </td>
+                        <td>
+                            A Taste of Texas!<BR>
+                            Smoked Brisket on thick-cut Texas<BR>
+                            Toast<BR>
+                            Cole Slaw<BR>
+                            Served with our famous thick-cut<BR>
+                            french fries<BR>
+                            $7.95
+                        </td>
+                </tbody>
+            </table>
+            <table align="center" width="800" class="beverageMenu table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Beverages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Root Beer</td> 
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     <hr/>
     </body>
     <footer>
