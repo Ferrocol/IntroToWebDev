@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="sampleAuditionProblem.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sample</h1>
+            <form name="giveMeNumbers" onsubmit="return validate();">
+                <div class="form-group row">
+                    <label for="startNum" class="col-sm-3 col-form-label"><span class="pull-right">Starting Number</span></label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" id="startNum">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="endNum" class="col-sm-3 col-form-label"><span class="pull-right">Ending Number</span></label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" id="endNum">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="step" class="col-sm-3 col-form-label"><span class="pull-right">Step</span></label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" id="step">
+                    </div>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <button type="submit" id="submitButton" class="btn">Display Evens</button>
+                </div>
+            </form>
+            <br/>
+            <br/>
+            <br/>
+            <table id="results" class="table" style="display:none;">
+                <tbody id="evens">
+                    <tr>
+                        <td><span id="resultStatement"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
