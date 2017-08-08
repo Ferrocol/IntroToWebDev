@@ -9,10 +9,20 @@
         <div class="container">
             <h1>Sample</h1>
             <form name="giveMeNumbers" onsubmit="return validate();">
+            <!-- assigns the name "giveMeNumbers" to this form; upon the onsubmit event, it returns the output of calling the function "validate" -->
                 <div class="form-group row">
+                <!-- assigns the class form-group row to this div;
+                .form-group maya be used for any group of form controls, with any block-level element like <fieldset> or <div>
+                the .row class was added to form groups using the Bootstrap grid -->
                     <label for="startNum" class="col-sm-3 col-form-label"><span class="pull-right">Starting Number</span></label>
+                    <!-- the .col-form-label was added to my <label> so it's vertically centered with the associated form controls,
+                    and the .col-*-* class specifies the width of my labels and controls; .pull-right was assigned to my <span>
+                    to align the label on the righthand side of the column -->
                     <div class="col-sm-3">
+                    <!-- .col-*-* specifies the width of the control -->
                         <input type="number" class="form-control" id="startNum">
+                        <!-- .form-control assigned with the textual input type "number";
+                        I have assigned the id "startNum" which may be referenced later -->
                     </div>
                 </div>
                 <div class="form-group row">
@@ -28,14 +38,18 @@
                     </div>
                 </div>
                 <div class="col-sm-6 text-center">
+                <!-- I set .col-*-* as the width of two form grid widths, and then used .text-center to center the button on the form -->
                     <button type="submit" id="submitButton" class="btn">Display Evens</button>
+                    <!-- to achieve the basic button style, .btn was assigned to my button; others include .btn-default, .btn-info, etc. -->
                 </div>
             </form>
             <br/>
             <br/>
             <br/>
             <table id="results" class="table" style="display:none;">
-                <tbody id="evens">
+            <!-- created a table, which by default does not display, for my results; since there could be a variable number of
+            results, and therefore a variable number of rows, I decided to concatenate my results array with my resultsStatement string -->
+                <tbody>
                     <tr>
                         <td><span id="resultStatement"></span></td>
                     </tr>

@@ -1,18 +1,37 @@
-h1 {
+.restaurantName {
+    font-family: serif;
+    color: teal;
     text-align: center;
-    color: red;
-    font-family: "Arial Black";
+    font-style: italic;
+}
+a:visited {
+    color: darkred;
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    text-decoration: none;
 }
 footer {
     text-align: center;
-    color: darkblue;
+    color: teal;
 }
 .menu {
-    background-color: darkblue;
+    background-color: lightsalmon;
 }
 .beverageMenu {
-    background-color: darkblue;
+    background-color: lightsalmon;
 }
 .beverageMenu td {
     font-style: normal;
+}
+.glyphicon.glyphicon-chevron-left, .glyphicon.glyphicon-chevron-right {
+    color: teal;
+}
+.required {
+    font-weight: bold;
+}
+.contactForm {
+    background-color: lemonchiffon;
 }

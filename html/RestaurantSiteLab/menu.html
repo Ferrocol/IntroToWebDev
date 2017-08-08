@@ -1,35 +1,63 @@
-<!--<!DOCTYPE html>
-the DOCTYPE was commented out because reportedly table align="center" is obsolete in HTML5-->
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
-        <link rel="stylesheet" type="text/css" href="A:Utilities/Development Tools/bootstrap-3.3.7-dist/css/bootstrap.css">
-        <title>Menu - All-American Eatery</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Menu - The Main Squeeze</title>
         <style>
             td {
                 text-align: center;
                 vertical-align: top;
                 font-style: italic;
-                color: azure;
+                color: darkslategray;
             }
             th {
                 font-size: larger;
-                color: azure;
                 text-align: center;
+                color: darkslategray;
             }
-            a:visited {
-                color: darkred;
-            }
-            a:hover {
-                font-weight: bold;
-            }
-            a:active {
-                text-decoration: none;
+            .carousel-control.right, .carousel-control.left {
+              background-image: none;
             }
         </style>
     </head>
     <body>
-        <h1>All-American Eatery</h1>
+        <h1 class="restaurantName">The Main Squeeze</h1>
+        <div id="announcement-carousel" class="carousel slide" data-ride="carousel">
+            <div class="row">
+                <div class="col-xs-offset-3 col-xs-6">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="carousel-content">
+                                <div>
+                                    <h4>We're opening a new location!</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content">
+                                <div>
+                                    <h4>We're rolling out our seasonal menu, with special options for this season.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-content">
+                                <h4>The Drink of the Month is SG Special Brew.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#announcement-carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#announcement-carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
         <hr/>
         <ul class="nav nav-pills">
             <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
@@ -38,7 +66,7 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
         </ul>
         <hr/>
         <div class="table-responsive">
-            <table align="center" width="800" class="menu table">
+            <table class="menu table">
                 <thead>
                     <tr>
                         <th>Burger and Fries</th>
@@ -106,7 +134,7 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
                         </td>
                 </tbody>
             </table>
-            <table align="center" width="800" class="beverageMenu table">
+            <table class="beverageMenu table">
                 <thead>
                     <tr>
                         <th colspan="2">Beverages</th>
@@ -114,7 +142,7 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Root Beer</td> 
+                        <td>Root Beer</td>
                         <td>$3.00</td>
                     </tr>
                     <tr>
@@ -135,7 +163,7 @@ the DOCTYPE was commented out because reportedly table align="center" is obsolet
     <hr/>
     </body>
     <footer>
-        254 Eat Street, Minneapolis, MN 55408 <br/>
+        254 Southeast Main Street, Minneapolis, MN 55414<br/>
         612-867-5309
     </footer>
 </html>

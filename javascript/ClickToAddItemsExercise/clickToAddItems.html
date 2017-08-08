@@ -7,21 +7,32 @@
     </head>
     <body>
         <div class="container">
+        <!-- assigns the class "container" to this div -->
             <h1>Click to Add Items</h1>
             <form name="numberFun" onsubmit="return validateItems();"
                 onreset="resetForm();" class="form-inline">
+            <!-- assigns the name "numberFun" to our form; upon submitting, it returns the function validateItems;
+            upon resetting, it calls the function "resetForm"; assigns the bootstrap class "form-inline" to the form -->
                 <div class="form-group">
+                <!-- assigns the class "form-group" to this div;
+                wraps labels and form controls, which is needed for optimum spacing -->
                     <label for="num1">Num1</label>
+                    <!-- defines this as a label for our input -->
                     <input type="number" class="form-control" id="num1">
+                    <!-- defines our input type as a number, the class as "form-control"
+                    (to give the element a width of 100%), and id as "num1" which may be referenced later -->
                 </div>
                 <div>
                     <label for="num2">Num2</label>
                     <input type="number" class="form-control" id="num2">
                 </div>
                 <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+                <!-- assigns the "Default" style to this button; other styles include
+                Basic, Default, Primary, Success, Info, Warning, Danger, and Link -->
                 <button type="reset" id="resetButton" class="btn">Reset</button>
             </form>
             <table id="results" class="table table-striped" style="display:none;">
+            <!-- we will have a striped table with the id of "results" that will not display by default -->
                 <thead>
                     <tr>
                         <th>Operation</th>
@@ -32,6 +43,8 @@
                     <tr>
                         <td>Addition (+)</td>
                         <td><span id="addResult"></span></td>
+                        <!-- the table will show the name of each operation in the first column
+                        and the result of the respective operation in the second column -->
                     </tr>
                     <tr>
                         <td>Subtraction (-)</td>
